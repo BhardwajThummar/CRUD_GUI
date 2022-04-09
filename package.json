@@ -4,8 +4,12 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "node ./server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+=======
+    "start": "node server.js"
+>>>>>>> 2e61487144e721f2fe256222da6dd71044925338
   },
   "author": "",
   "license": "ISC",
