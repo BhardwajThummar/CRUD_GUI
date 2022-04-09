@@ -29,8 +29,6 @@ app.listen(port,() => {
     console.log("Server started at port 3000");
 });
 
-app.get("/", (req, res) => {
-    res.send("Welcome To My Node.js App");
-})
+app.use('/', home);
 
 app.use('/employee', employeeController);
