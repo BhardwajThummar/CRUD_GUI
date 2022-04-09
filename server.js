@@ -24,7 +24,7 @@ app.engine("handlebars", engine({ defaultLayout: "main" }));
 app.engine('hbs', engine({ extname: 'hbs', defaultLayout: 'mainLayout', layoutsDir: __dirname + '/views/layouts/' }));
 app.set('view engine', 'hbs');
 
-app.listen(3000,() => {
+app.listen(8000,() => {
     console.log("Server started at port 3000");
 });
 
