@@ -5,6 +5,9 @@ const exphbs = require("express-handlebars");
 const bodyParser = require("body-parser");
 const {engine} = require("express-handlebars");
 const mongoose = require("mongoose");
+require('dotenv/config');
+const port = process.env.PORT || 8000;
+
 
 var app = express();
 
@@ -24,8 +27,8 @@ app.engine("handlebars", engine({ defaultLayout: "main" }));
 app.engine('hbs', engine({ extname: 'hbs', defaultLayout: 'mainLayout', layoutsDir: __dirname + '/views/layouts/' }));
 app.set('view engine', 'hbs');
 
-app.listen(3000,() => {
-    console.log("Server started at port 3000");
+app.listen(port,() => {
+    console.log(`Server started at port ${port}`);
 });
 
 app.get("/", (req, res) => {
