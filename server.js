@@ -1,5 +1,6 @@
 const express = require("express");
 const employeeController = require("./controllers/employeeController");
+const home = require("./controllers/home");
 const path = require("path");
 const exphbs = require("express-handlebars");
 const bodyParser = require("body-parser");
