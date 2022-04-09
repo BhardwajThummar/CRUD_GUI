@@ -5,7 +5,7 @@ const exphbs = require("express-handlebars");
 const bodyParser = require("body-parser");
 const {engine} = require("express-handlebars");
 const mongoose = require("mongoose");
-const port = process.env.PORT|| 3000;
+const port = process.env.PORT || 5000;
 
 var app = express();
 
