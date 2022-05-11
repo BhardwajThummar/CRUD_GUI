@@ -13,7 +13,7 @@ var app = express();
 //DB connection
 mongoose.connect(   
     "mongodb+srv://BHARDWAJ:YhnYmJXjGnvXgxAN@cluster0.voeu8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", 
-    ()=> console.log('Connected to DB')
+    ()=> console.log('Connected to DB is not connected to DBBDBDBSHFBSDBFDL')
 );
 
 app.use(bodyParser.urlencoded({
